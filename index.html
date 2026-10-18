@@ -1,0 +1,46 @@
+<title>Erva-mate no Brasil: produção por região</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&display=swap">
+<style>
+:root{--bg:#E6ECDF;--card:#F7F9F2;--ink:#14301F;--mut:#586A5D;--line:#C6D1BE;--pr:#2A7050;--rs:#4F9A78;--sc:#86BBA0;--ms:#B5762A;--sp:#8A9A3B;--acc:#2A7050;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1711;--card:#16231A;--ink:#E4ECDD;--mut:#9DB0A2;--line:#2A3C30;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1711;--card:#16231A;--ink:#E4ECDD;--mut:#9DB0A2;--line:#2A3C30;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:980px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:clamp(2.1rem,8vw,3.8rem);line-height:1;letter-spacing:-.035em;font-weight:800;margin:0 0 .35em;max-width:14ch}
+h2{font-size:1.35rem;letter-spacing:-.01em;margin:0 0 4px;font-weight:700}
+.lede,.hint{color:var(--mut);max-width:60ch;margin:0}
+.hint{font-size:.92rem;margin-bottom:14px}
+section{margin-top:40px}
+.seg{display:flex;gap:2px;height:60px;margin:26px 0 10px}
+.seg i{display:block;border-radius:3px}
+.leg{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.9rem;color:var(--mut)}
+.leg b{display:inline-block;width:.8em;height:.8em;border-radius:2px;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.chips button{font:inherit;min-height:44px;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--ms);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:14px}
+@media (min-width:720px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.k{border-left:3px solid var(--acc);padding:2px 0 2px 12px}
+.k span{display:block;color:var(--mut);font-size:.85rem}
+.k strong{font-size:1.55rem;font-weight:800;letter-spacing:-.02em}
+.row{display:grid;grid-template-columns:8.5em 1fr 4.6em;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.row small{display:block;color:var(--mut);font-size:.78rem;line-height:1.25}
+.row b{text-align:right;font-weight:700}
+.bar{height:12px;border-radius:2px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%}
+.empty{padding:14px 16px;border:1px dashed var(--line);border-radius:8px;color:var(--mut);margin:0}
+.sl{display:grid;grid-template-columns:8em 1fr 3em;gap:10px;align-items:center;margin:4px 0}
+.sl input{width:100%;accent-color:var(--pr)}
+.sl output{text-align:right;font-variant-numeric:tabular-nums}
+.why{margin:12px 0 0;font-weight:600}
+.sim{display:grid;gap:12px;grid-template-columns:1fr;margin-bottom:14px}
+@media (min-width:720px){.sim{grid-template-columns:repeat(3,1fr)}}
+label.f{display:block;font-size:.88rem;color:var(--mut)}
+input[type=number]{display:block;width:100%;margin-top:4px;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:9px 10px;min-height:44px}
+details{margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+summary{cursor:pointer;font-weight:700;font-size:1.1rem}
+.tw{overflow-x:auto;margin-top:12px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
